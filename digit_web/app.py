@@ -54,15 +54,5 @@ def predict():
     response = np.argmax(out, axis=1)
     return str(response[0])
 
-    # with graph.as_default():
-    #     # perform prediction
-    #     out = model.predict(x)
-    #     print(np.argmax(out, axis=1))
-    #     # Convert the response to string
-    #     response = np.argmax(out, axis=1)
-    #     return str(response[0])
-
-
-
 if __name__ == '__main__':
     app.run()
